@@ -18,7 +18,7 @@ android {
         exclude 'META-INF/robovm/ios/robovm.xml'
     }
     defaultConfig {
-        applicationId "com.lce"
+        applicationId "com.lde"
         minSdkVersion 9
         targetSdkVersion 27
         versionCode 1
@@ -79,7 +79,7 @@ task run(type: Exec) {
     }
 
     def adb = path + "/platform-tools/adb"
-    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.lce/com.lce.AndroidLauncher'
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.lde/com.lde.AndroidLauncher'
 }
 
 // sets up the Android Eclipse project, using the old Ant based build.
